@@ -10,7 +10,6 @@ api = ""
 chem_model = ChemCrow(model="gpt-4-0613",tools_model="gpt-4-turbo-preview", temp=0.1, streaming=True,openai_api_key=api)
 
 #message处理
-#2
 if "messages" not in st.session_state:
     st.session_state.messages = []
 for message in st.session_state.messages:
